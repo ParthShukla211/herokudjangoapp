@@ -1,0 +1,14 @@
+body{
+    color: aliceblue;
+}
+
+.home{
+    display: flex;
+    background:  url("../img/homeimg.png") no-repeat center;
+    /* background-color: #111; */
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}

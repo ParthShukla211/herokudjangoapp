@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Personal Portfolio Website</title>
+    {% load static %}   
+    <link rel= "stylesheet"href= "{% static '/css/style.css' %}" type= "text/css">
+
+</head>
+
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Parth - <span>Portfolio.</span></a></div>
+            <ul class="menu">
+                <li><a href="{% url 'home' %}"  class="menu-btn">Home</a></li>
+                <li><a href="{% url 'myskills' %}" class="menu-btn">My Skills</a></li>
+                <li><a href="{% url 'myprojects' %}" class="menu-btn">My Projects</a></li>
+                <li><a href="{% url 'certificates' %}" class="menu-btn">Certificates</a></li>
+                <li><a href="{% url 'aboutme' %}" class="menu-btn">About Me</a></li>
+                <li><a href="{% url 'contactme' %}" class="menu-btn">Contact Me</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Parth Shukla</div>
+                <div class="text-3">And I'm a Student</div>
+                <a href="#">Explore More</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <b>Parth Shukla</b> , Copyright &copy; 2022 All rights reserved.</span>
+    </footer>
+
+
+
+</body>
+
+</html>
